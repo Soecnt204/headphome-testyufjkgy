@@ -1,0 +1,91 @@
+#admin-container, #anime-list {
+    padding: 20px;
+    background-color: #202125;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+#anime-form input,
+#anime-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #35373d;
+    background-color: #14151a;
+    color: white;
+}
+
+#anime-form button, #download-button {
+    padding: 10px 20px;
+    background-color: #52d68a;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.episode-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.episode-item input { margin: 0; }
+.remove-episode { background-color: #4a4b51; }
+
+.anime-list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #35373d;
+    color: white;
+}
+
+.id-fetch-container {
+    display: flex;
+    gap: 10px;
+}
+
+.id-fetch-container input {
+    flex-grow: 1;
+    margin: 0 !important;
+}
+
+.id-fetch-container, .view-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.id-fetch-container input, .view-inputs input {
+    flex-grow: 1;
+    margin: 0 !important;
+}
+.id-fetch-container button {
+    margin: 0 !important;
+}
+#feedback-message {
+    color: #5bb318; /* Green success color */
+    margin-top: 10px;
+    font-weight: bold;
+}
+h4 {
+    color: #52d68a;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-left: 3px solid #52d68a;
+    padding-left: 10px;
+}
+.details-row {
+    display: flex;
+    gap: 10px;
+}
+.options-container {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
