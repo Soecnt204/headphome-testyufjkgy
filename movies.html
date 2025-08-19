@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <title>Movies - AnimeDex</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
+    <meta name="robots" content="index, follow" />
+    <link href="./css/search.css" rel="stylesheet">
+</head>
+<body>
+    <header id="head-div">
+        <div id="title1">
+            <a href="./index.html"><img width="150" height="40" src="./static/header.png" alt="AnimeDex"></a>
+        </div>
+        <div id="search-div">
+            <form action="./search.html" method='GET'>
+                <input type="text" name="query" id="query" placeholder="Search Anime..." required>
+                <button name="search" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <section id="main-section">
+        <div class="divox">
+            <h2 id="latest">Movies</h2>
+            <div id="load">
+                <img src="./static/loading2.gif" alt="Loading..." />
+            </div>
+            <div id="latest2" style="display: none;">
+                </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div>
+            <a href="https://github.com/TechShreyash" target="_blank">MADE WITH <i class="fa fa-heart pulse"></i>BY TECH SHREYASH</a>
+        </div>
+    </footer>
+    <hr>
+
+    <script src="./js/movies.js"></script>
+    <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
+</body>
+</html>

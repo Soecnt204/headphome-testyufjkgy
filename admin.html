@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <title>Admin Panel - AnimeDex</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
+    <link href="./css/anime.css" rel="stylesheet">
+    <link href="./css/admin.css" rel="stylesheet">
+</head>
+<body>
+    <header id="head-div">
+        <div id="title1">
+            <a href="./index.html"><img width="150" height="40" src="./static/header.png" alt="AnimeDex"></a>
+        </div>
+    </header>
+
+    <section id="main-section">
+        <div class="divox">
+            <h2 id="latest">Admin Panel</h2>
+            <div id="admin-container">
+                <h3>Add or Edit Anime</h3>
+                <form id="anime-form">
+                    <div class="id-fetch-container">
+                        <input type="number" id="anilist-id" placeholder="Enter AniList Anime ID...">
+                        <input type="number" id="mal-id" placeholder="Enter MAL ID (optional)...">
+                        <button type="button" id="fetch-button">Fetch by ID</button>
+                    </div>
+                    <div class="id-fetch-container">
+                        <input type="number" id="anilist-year-input" placeholder="AniList Year...">
+                        <button type="button" id="fetch-anilist-by-year-button">Fetch from AniList</button>
+                    </div>
+                    <div class="id-fetch-container">
+                        <input type="number" id="mal-year-input" placeholder="MAL Year...">
+                        <button type="button" id="fetch-mal-by-year-button">Fetch from MAL</button>
+                    </div>
+                    <hr>
+                    
+                    <h4>Popularity (Auto-Filled)</h4>
+                    <div class="view-inputs">
+                        <input type="number" id="monthly-views" placeholder="Monthly Views">
+                        <input type="number" id="weekly-views" placeholder="Weekly Views">
+                        <input type="number" id="daily-views" placeholder="Daily Views">
+                    </div>
+
+                    <h4>Anime Details</h4>
+<input type="text" id="anime-title" placeholder="Anime Title" required>
+
+<input type="text" id="anime-title-english" placeholder="English Title">
+<input type="text" id="anime-title-native" placeholder="Native/Japanese Title">
+<input type="text" id="anime-synonyms" placeholder="Synonyms (comma-separated)">
+<input type="text" id="anime-duration" placeholder="Duration (e.g., 24 min)">
+<input type="text" id="anime-premiered" placeholder="Premiered (e.g., Spring 2023)">
+<input type="text" id="anime-aired" placeholder="Aired (e.g., Apr 1, 2023 to ?)">
+<input type="text" id="anime-studios" placeholder="Studios (comma-separated)">
+<input type="text" id="anime-producers" placeholder="Producers (comma-separated)">
+<input type="text" id="anime-other-names" placeholder="Other Names">
+<input type="text" id="anime-score" placeholder="MAL Score (auto-filled)">
+<textarea id="anime-description" placeholder="Anime Description" rows="5"></textarea>
+
+                    <input type="text" id="anime-cover" placeholder="Cover Image URL">
+                    <input type="text" id="anime-banner" placeholder="Banner Image URL">
+                    <input type="text" id="anime-genres" placeholder="Genres (comma-separated)">
+                    <div class="details-row">
+                        <input type="text" id="anime-episodes" placeholder="Total Episodes">
+                        <input type="text" id="anime-year" placeholder="Release Year">
+                        <input type="text" id="anime-format" placeholder="Format (e.g., TV)">
+                        <input type="text" id="anime-status" placeholder="Status (e.g., FINISHED)">
+                    </div>
+                    
+                    <h4>Episodes</h4>
+                    <div id="episodes-container"></div>
+                    <button type="button" id="add-episode">+ Add Episode</button>
+
+                    <div class="options-container" style="margin-top: 15px;">
+                         <input type="checkbox" id="latest-episode-checkbox">
+                         <label for="latest-episode-checkbox">Add to "Latest Episode" Section</label>
+                    </div>
+
+                    <button type="submit">Save to Collection</button>
+                    <p id="feedback-message"></p>
+                </form>
+            </div>
+            <div id="anime-list">
+                <h3>Your Anime Collection</h3>
+            </div>
+             <button id="download-button">Generate and Download anime_data.json</button>
+        </div>
+    </section>
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-g">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up - AnimeDex</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header id="header">
+        <div class="header-container">
+            <a href="./index.html" class="logo">
+                <img src="./static/header.png" alt="AnimeDex Logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-tabs">
+                <button class="tab-link active" onclick="showForm('login')">Login</button>
+                <button class="tab-link" onclick="showForm('signup')">Sign Up</button>
+            </div>
+
+            <form id="login-form" class="auth-form active">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <p class="error-message" id="login-error"></p>
+                <button type="submit">Login</button>
+            </form>
+
+            <form id="signup-form" class="auth-form">
+                <input type="text" id="signup-username" placeholder="Username" required>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password (min. 6 characters)" required>
+                <p class="error-message" id="signup-error"></p>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module">
+        // Replace this with your actual Firebase config
+        const firebaseConfig = {
+          apiKey: "AIzaSy...your...key",
+          authDomain: "your-project-id.firebaseapp.com",
+          projectId: "your-project-id",
+          storageBucket: "your-project-id.appspot.com",
+          messagingSenderId: "1234567890",
+          appId: "1:1234567890:web:abcdef123456"
+        };
+      
+        // Initialize Firebase
+        // We will do this in the auth.js file
+      </script>
+
+      <script type="module" src="./js/auth.js"></script>
+</body>
+</html>
